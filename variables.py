@@ -4,8 +4,10 @@ pg.init()
 
 fps = 60
 largura, altura = 1000, 800
+icon = pg.transform.scale(pg.image.load('./images/ball.png'), (16, 16))
 tela = pg.display.set_mode((largura, altura))
 pg.display.set_caption('Fisquete')
+pg.display.set_icon(icon)
 relogio = pg.time.Clock()
 
 branco = (255, 255, 255)
@@ -23,5 +25,9 @@ roxo = (166, 20, 182)
 
 MTfont = pg.font.Font('./fonts/main_title.ttf', 100)
 buttons = pg.font.Font('./fonts/geral.ttf', 50)
+eixos = pg.font.Font('./fonts/geral.ttf', 20)
 
 MMbg = pg.transform.scale(pg.image.load('./images/MMbg.jpg'), (largura, altura))
+main_bg = pg.image.load('./images/game_bg.jpg')
+
+
